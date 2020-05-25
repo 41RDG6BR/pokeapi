@@ -25,12 +25,16 @@ function Card({ pokemon }) {
             </div>
             <div className="Card__info">
                 <div className="Card__data Card__data--weight">
-                    <p className="title">Weight</p>
-                    <p>{pokemon.weight}</p>
+                    <p className="title">hp</p>
+                    <p>{pokemon.stats[5].base_stat}</p>
                 </div>
                 <div className="Card__data Card__data--weight">
-                    <p className="title">Height</p>
-                    <p>{pokemon.height}</p>
+                    <p className="title">Attack</p>
+                    <p>{pokemon.stats[4].base_stat}</p>
+                </div>
+                 <div className="Card__data Card__data--weight">
+                    <p className="title">Defense</p>
+                    <p>{pokemon.stats[4].base_stat}</p>
                 </div>
                 <div className="Card__data Card__data--ability">
                     <p className="title">Ability</p>
